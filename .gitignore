@@ -1,0 +1,7 @@
+# Ignore ros2 build files
+**/build/*
+**/install/*
+**/log/*
+
+# Ignore vscode configuration files
+**/.vscode/*
