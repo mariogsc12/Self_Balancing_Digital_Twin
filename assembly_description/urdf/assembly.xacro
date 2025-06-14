@@ -550,152 +550,152 @@
   </collision>
 </link>
 
-<joint name="Rígida 2" type="fixed">
+<joint name="Rigid 2" type="fixed">
   <origin xyz="0.0 0.1 0.0" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Aluminium_20x20_250_back_1"/>
 </joint>
 
-<joint name="Rígida 3" type="fixed">
+<joint name="Rigid 3" type="fixed">
   <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Battery_1"/>
 </joint>
 
-<joint name="Rígida 4" type="fixed">
+<joint name="Rigid 4" type="fixed">
   <origin xyz="0.1278 -0.0196 -0.135" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_250_back_1"/>
   <child link="Aluminium_20x40_160_left_1"/>
 </joint>
 
-<joint name="Rígida 5" type="fixed">
+<joint name="Rigid 5" type="fixed">
   <origin xyz="0.1278 -0.0196 0.115" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_250_back_1"/>
   <child link="Aluminium_20x40_160_right_1"/>
 </joint>
 
-<joint name="Rígida 6" type="fixed">
+<joint name="Rigid 6" type="fixed">
   <origin xyz="0.0722 -0.1002 -0.1127" rpy="0 0 0"/>
   <parent link="Aluminium_20x40_160_right_1"/>
   <child link="Shaft_Collar_16mm_left1_1"/>
 </joint>
 
-<joint name="Rígida 8" type="fixed">
+<joint name="Rigid 8" type="fixed">
   <origin xyz="-0.3578 -0.0771 0.0452" rpy="0 0 0"/>
   <parent link="Aluminium_20x40_160_left_1"/>
   <child link="Aluminium_20x20_250_front_1"/>
 </joint>
 
-<joint name="Rígida 10" type="fixed">
+<joint name="Rigid 10" type="fixed">
   <origin xyz="-0.3478 -0.0802 0.1377" rpy="0 0 0"/>
   <parent link="Aluminium_20x40_160_left_1"/>
   <child link="Shaft_Collar_16mm_right2_1"/>
 </joint>
 
-<joint name="Rígida 11" type="fixed">
+<joint name="Rigid 11" type="fixed">
   <origin xyz="0.0922 -0.1002 -0.1377" rpy="0 0 0"/>
   <parent link="Aluminium_20x40_160_right_1"/>
   <child link="Shaft_Collar_16mm_left2_1"/>
 </joint>
 
-<joint name="Rígida 12" type="fixed">
+<joint name="Rigid 12" type="fixed">
   <origin xyz="-0.3278 -0.0802 0.1377" rpy="0 0 0"/>
   <parent link="Aluminium_20x40_160_left_1"/>
   <child link="Shaft_Collar_16mm_right1_1"/>
 </joint>
 
-<joint name="Rígida 13" type="fixed">
+<joint name="Rigid 13" type="fixed">
   <origin xyz="0.125 -0.017 0.0" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_250_back_1"/>
   <child link="Aluminium_20x20_100_back_left_1"/>
 </joint>
 
-<joint name="Rígida 14" type="fixed">
+<joint name="Rigid 14" type="fixed">
   <origin xyz="-0.125 -0.0026 -0.0" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_250_back_1"/>
   <child link="Aluminium_20x20_100_back_right_1"/>
 </joint>
 
-<joint name="Rígida 15" type="fixed">
+<joint name="Rigid 15" type="fixed">
   <origin xyz="0.105 -0.0859 0.0898" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_250_front_1"/>
   <child link="Aluminium_20x20_100_front_right_1"/>
 </joint>
 
-<joint name="Rígida 16" type="fixed">
+<joint name="Rigid 16" type="fixed">
   <origin xyz="0.355 -0.1003 0.0898" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_250_front_1"/>
   <child link="Aluminium_20x20_100_front_left_1"/>
 </joint>
 
-<joint name="Rígida 19" type="fixed">
+<joint name="Rigid 19" type="fixed">
   <origin xyz="0.0 -0.0144 0.1" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_100_front_right_1"/>
   <child link="Aluminium_20x20_250_top_front_1"/>
 </joint>
 
-<joint name="Rígida 20" type="fixed">
+<joint name="Rigid 20" type="fixed">
   <origin xyz="0.0 -0.0144 0.1" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_100_back_right_1"/>
   <child link="Aluminium_20x20_250_top_back_1"/>
 </joint>
 
-<joint name="Rígida 21" type="fixed">
+<joint name="Rigid 21" type="fixed">
   <origin xyz="0.0 0.0172 0.0172" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_250_top_front_1"/>
   <child link="Aluminium_20x20_160_right_1"/>
 </joint>
 
-<joint name="Rígida 22" type="fixed">
+<joint name="Rigid 22" type="fixed">
   <origin xyz="0.25 0.0172 0.0172" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_250_top_front_1"/>
   <child link="Aluminium_20x20_160_left_1"/>
 </joint>
 
-<joint name="Rígida 27" type="fixed">
+<joint name="Rigid 27" type="fixed">
   <origin xyz="0.1049 0.12 0.0826" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_160_left_1"/>
   <child link="encoder_holding_left_1"/>
 </joint>
 
-<joint name="Rígida 28" type="fixed">
+<joint name="Rigid 28" type="fixed">
   <origin xyz="-0.1051 0.12 0.0826" rpy="0 0 0"/>
   <parent link="Aluminium_20x20_160_right_1"/>
   <child link="encoder_holding_right_1"/>
 </joint>
 
-<joint name="Rígida 29" type="fixed">
+<joint name="Rigid 29" type="fixed">
   <origin xyz="-0.1175 -0.0475 -0.19279" rpy="0 0 0"/>
   <parent link="encoder_holding_left_1"/>
   <child link="E6B2_CWZ6C_left_1"/>
 </joint>
 
-<joint name="Rígida 30" type="fixed">
+<joint name="Rigid 30" type="fixed">
   <origin xyz="0.1175 -0.055 -0.1798" rpy="0 0 0"/>
   <parent link="encoder_holding_right_1"/>
   <child link="E6B2_CWZ6C_right_1"/>
 </joint>
 
-<joint name="Rígida 31" type="fixed">
+<joint name="Rigid 31" type="fixed">
   <origin xyz="-0.2128 -0.0802 0.1154" rpy="0 0 0"/>
   <parent link="Aluminium_20x40_160_left_1"/>
   <child link="shaft_right_1"/>
 </joint>
 
-<joint name="Rígida 32" type="fixed">
+<joint name="Rigid 32" type="fixed">
   <origin xyz="-0.0428 -0.0802 -0.1346" rpy="0 0 0"/>
   <parent link="Aluminium_20x40_160_right_1"/>
   <child link="shaft_left_1"/>
 </joint>
 
-<joint name="Revolución 35" type="continuous">
+<joint name="Revolute 35" type="continuous">
   <origin xyz="-0.0476 0.0 -0.0055" rpy="0 0 0"/>
   <parent link="shaft_right_1"/>
   <child link="wheel_right_1"/>
   <axis xyz="1.0 0.0 0.0"/>
 </joint>
 
-<joint name="Revolución 36" type="continuous">
+<joint name="Revolute 36" type="continuous">
   <origin xyz="0.0476 0.0 -0.0055" rpy="0 0 0"/>
   <parent link="shaft_left_1"/>
   <child link="wheel_left_1"/>
