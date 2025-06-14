@@ -1,0 +1,705 @@
+<?xml version="1.0" ?>
+<robot name="assembly" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find assembly_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find assembly_description)/urdf/assembly.trans" />
+<xacro:include filename="$(find assembly_description)/urdf/assembly.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="2.891151938704374e-05 -3.589068063802687e-05 0.0015000000000000011" rpy="0 0 0"/>
+    <mass value="0.061915042915976895"/>
+    <inertia ixx="0.000208" iyy="0.00019" izz="0.000398" ixy="3e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x20_250_back_1">
+  <inertial>
+    <origin xyz="-2.1316282072803005e-16 -0.009799998509883653 -0.009999999999999986" rpy="0 0 0"/>
+    <mass value="0.10387281401481002"/>
+    <inertia ixx="9e-06" iyy="0.000546" izz="0.000546" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.1 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.1 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Battery_1">
+  <inertial>
+    <origin xyz="1.4210854715202004e-16 2.6645352591003756e-17 -0.019000000000000006" rpy="0 0 0"/>
+    <mass value="1.9489182911"/>
+    <inertia ixx="0.000593" iyy="0.003372" izz="0.003497" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Battery_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Battery_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x40_160_left_1">
+  <inertial>
+    <origin xyz="-0.23280000000004203 -0.08019999850988416 0.12499999999999298" rpy="0 0 0"/>
+    <mass value="0.11612005351856171"/>
+    <inertia ixx="0.000253" iyy="2.5e-05" izz="0.000267" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1278 -0.0804 0.135" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x40_160_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1278 -0.0804 0.135" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x40_160_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x40_160_right_1">
+  <inertial>
+    <origin xyz="-0.022800000000042286 -0.08019999850988382 -0.12500000000001132" rpy="0 0 0"/>
+    <mass value="0.11612005351856171"/>
+    <inertia ixx="0.000253" iyy="2.5e-05" izz="0.000267" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1278 -0.0804 -0.115" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x40_160_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1278 -0.0804 -0.115" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x40_160_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Shaft_Collar_16mm_left1_1">
+  <inertial>
+    <origin xyz="-0.10499991829768908 0.02000000149011615 -0.03697410818676196" rpy="0 0 0"/>
+    <mass value="0.01004347066493271"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.2 0.0198 -0.0023" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_left1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.2 0.0198 -0.0023" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_left1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x20_250_front_1">
+  <inertial>
+    <origin xyz="0.22999999999999987 -0.0930999985098841 0.07979999999999995" rpy="0 0 0"/>
+    <mass value="0.10387281401481002"/>
+    <inertia ixx="9e-06" iyy="0.000546" izz="0.000546" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.23 -0.0033 0.0898" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.23 -0.0033 0.0898" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Shaft_Collar_16mm_right2_1">
+  <inertial>
+    <origin xyz="0.105000081702311 1.4901159926740577e-09 -0.037374108186746" rpy="0 0 0"/>
+    <mass value="0.01004347066493271"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.22 -0.0002 -0.0027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_right2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.22 -0.0002 -0.0027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_right2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Shaft_Collar_16mm_left2_1">
+  <inertial>
+    <origin xyz="-0.10499991829768884 0.020000001490116135 -0.011974108186761683" rpy="0 0 0"/>
+    <mass value="0.01004347066493271"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.22 0.0198 0.0227" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_left2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.22 0.0198 0.0227" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_left2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Shaft_Collar_16mm_right1_1">
+  <inertial>
+    <origin xyz="0.10500008170231123 1.4901159216317104e-09 -0.037374108186746004" rpy="0 0 0"/>
+    <mass value="0.01004347066493271"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.2 -0.0002 -0.0027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_right1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.2 -0.0002 -0.0027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_right1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x20_100_back_left_1">
+  <inertial>
+    <origin xyz="-0.010000000000033427 0.007200001490116417 0.05000000000000083" rpy="0 0 0"/>
+    <mass value="0.04154912560592385"/>
+    <inertia ixx="3.6e-05" iyy="3.6e-05" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.125 -0.083 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_back_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.125 -0.083 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_back_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x20_100_back_right_1">
+  <inertial>
+    <origin xyz="0.00999999999996666 -0.007199998509883607 0.04999999999999823" rpy="0 0 0"/>
+    <mass value="0.04154912560592385"/>
+    <inertia ixx="3.6e-05" iyy="3.6e-05" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.125 -0.0974 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_back_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.125 -0.0974 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_back_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x20_100_front_right_1">
+  <inertial>
+    <origin xyz="0.0099999999999668 -0.007199998509883926 0.04999999999999823" rpy="0 0 0"/>
+    <mass value="0.04154912560592385"/>
+    <inertia ixx="3.6e-05" iyy="3.6e-05" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.125 0.0826 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_front_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.125 0.0826 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_front_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x20_100_front_left_1">
+  <inertial>
+    <origin xyz="-0.010000000000033399 0.007200001490115987 0.05000000000000069" rpy="0 0 0"/>
+    <mass value="0.04154912560592385"/>
+    <inertia ixx="3.6e-05" iyy="3.6e-05" izz="4e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.125 0.097 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_front_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.125 0.097 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_front_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x20_250_top_front_1">
+  <inertial>
+    <origin xyz="0.12499999999999947 0.007200001490115723 0.010000000000006656" rpy="0 0 0"/>
+    <mass value="0.10387281401481002"/>
+    <inertia ixx="9e-06" iyy="0.000546" izz="0.000546" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.125 0.097 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_top_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.125 0.097 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_top_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x20_250_top_back_1">
+  <inertial>
+    <origin xyz="0.12500000000000017 0.00720000149011614 0.010000000000000703" rpy="0 0 0"/>
+    <mass value="0.10387281401481002"/>
+    <inertia ixx="9e-06" iyy="0.000546" izz="0.000546" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.125 -0.083 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_top_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.125 -0.083 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_top_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x20_160_right_1">
+  <inertial>
+    <origin xyz="0.00999999999996612 0.08000000149011581 -0.007200000000001178" rpy="0 0 0"/>
+    <mass value="0.06647860096947843"/>
+    <inertia ixx="0.000145" iyy="6e-06" izz="0.000145" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.125 0.0798 -0.1172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_160_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.125 0.0798 -0.1172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_160_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Aluminium_20x20_160_left_1">
+  <inertial>
+    <origin xyz="-0.010000000000033232 0.0800000014901157 -0.007199999999986745" rpy="0 0 0"/>
+    <mass value="0.06647860096947843"/>
+    <inertia ixx="0.000145" iyy="6e-06" izz="0.000145" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.125 0.0798 -0.1172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_160_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.125 0.0798 -0.1172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_160_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="encoder_holding_left_1">
+  <inertial>
+    <origin xyz="-0.11500051814113516 -0.0399999985100823 -0.13226746099401204" rpy="0 0 0"/>
+    <mass value="0.03259644778051005"/>
+    <inertia ixx="3.5e-05" iyy="2.9e-05" izz="7e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.2299 -0.0402 -0.1998" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/encoder_holding_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.2299 -0.0402 -0.1998" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/encoder_holding_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="encoder_holding_right_1">
+  <inertial>
+    <origin xyz="0.11500051814114011 -0.039999998509686184 -0.13226746099402636" rpy="0 0 0"/>
+    <mass value="0.03259644778051005"/>
+    <inertia ixx="3.5e-05" iyy="2.9e-05" izz="7e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.2301 -0.0402 -0.1998" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/encoder_holding_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.2301 -0.0402 -0.1998" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/encoder_holding_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="E6B2_CWZ6C_left_1">
+  <inertial>
+    <origin xyz="-0.01875290146326239 0.007219493228867726 0.012990000000086096" rpy="0 0 0"/>
+    <mass value="0.40304765945106313"/>
+    <inertia ixx="8e-05" iyy="9.7e-05" izz="0.0001" ixy="-1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1124 0.0073 -0.00701" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/E6B2_CWZ6C_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1124 0.0073 -0.00701" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/E6B2_CWZ6C_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="E6B2_CWZ6C_right_1">
+  <inertial>
+    <origin xyz="0.018752901463273353 0.015280509751363783 7.437106486207767e-14" rpy="0 0 0"/>
+    <mass value="0.40304765945106313"/>
+    <inertia ixx="8e-05" iyy="9.7e-05" izz="0.0001" ixy="-1e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1126 0.0148 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/E6B2_CWZ6C_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1126 0.0148 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/E6B2_CWZ6C_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="shaft_right_1">
+  <inertial>
+    <origin xyz="-0.022762486380473734 -4.2019268957479896e-08 -0.006217226931505088" rpy="0 0 0"/>
+    <mass value="0.013420470010203595"/>
+    <inertia ixx="0.0" iyy="4e-06" izz="4e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.085 -0.0002 0.0196" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/shaft_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.085 -0.0002 0.0196" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/shaft_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="shaft_left_1">
+  <inertial>
+    <origin xyz="0.022762486380474123 4.4999497936958803e-08 -0.0062172269315027735" rpy="0 0 0"/>
+    <mass value="0.013420470010203595"/>
+    <inertia ixx="0.0" iyy="4e-06" izz="4e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.085 -0.0002 0.0196" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/shaft_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.085 -0.0002 0.0196" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/shaft_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_right_1">
+  <inertial>
+    <origin xyz="-0.02940512086412911 -1.349316031394349e-07 -2.022076194888034e-07" rpy="0 0 0"/>
+    <mass value="7.444060405041716"/>
+    <inertia ixx="0.021214" iyy="0.012202" izz="0.012202" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1326 -0.0002 0.0251" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1326 -0.0002 0.0251" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_left_1">
+  <inertial>
+    <origin xyz="0.029405072603979426 -8.089466567255937e-08 2.1975734094611954e-07" rpy="0 0 0"/>
+    <mass value="7.4441482758744355"/>
+    <inertia ixx="0.021214" iyy="0.012203" izz="0.012203" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1326 -0.0002 0.0251" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1326 -0.0002 0.0251" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assembly_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rígida 2" type="fixed">
+  <origin xyz="0.0 0.1 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Aluminium_20x20_250_back_1"/>
+</joint>
+
+<joint name="Rígida 3" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Battery_1"/>
+</joint>
+
+<joint name="Rígida 4" type="fixed">
+  <origin xyz="0.1278 -0.0196 -0.135" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_250_back_1"/>
+  <child link="Aluminium_20x40_160_left_1"/>
+</joint>
+
+<joint name="Rígida 5" type="fixed">
+  <origin xyz="0.1278 -0.0196 0.115" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_250_back_1"/>
+  <child link="Aluminium_20x40_160_right_1"/>
+</joint>
+
+<joint name="Rígida 6" type="fixed">
+  <origin xyz="0.0722 -0.1002 -0.1127" rpy="0 0 0"/>
+  <parent link="Aluminium_20x40_160_right_1"/>
+  <child link="Shaft_Collar_16mm_left1_1"/>
+</joint>
+
+<joint name="Rígida 8" type="fixed">
+  <origin xyz="-0.3578 -0.0771 0.0452" rpy="0 0 0"/>
+  <parent link="Aluminium_20x40_160_left_1"/>
+  <child link="Aluminium_20x20_250_front_1"/>
+</joint>
+
+<joint name="Rígida 10" type="fixed">
+  <origin xyz="-0.3478 -0.0802 0.1377" rpy="0 0 0"/>
+  <parent link="Aluminium_20x40_160_left_1"/>
+  <child link="Shaft_Collar_16mm_right2_1"/>
+</joint>
+
+<joint name="Rígida 11" type="fixed">
+  <origin xyz="0.0922 -0.1002 -0.1377" rpy="0 0 0"/>
+  <parent link="Aluminium_20x40_160_right_1"/>
+  <child link="Shaft_Collar_16mm_left2_1"/>
+</joint>
+
+<joint name="Rígida 12" type="fixed">
+  <origin xyz="-0.3278 -0.0802 0.1377" rpy="0 0 0"/>
+  <parent link="Aluminium_20x40_160_left_1"/>
+  <child link="Shaft_Collar_16mm_right1_1"/>
+</joint>
+
+<joint name="Rígida 13" type="fixed">
+  <origin xyz="0.125 -0.017 0.0" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_250_back_1"/>
+  <child link="Aluminium_20x20_100_back_left_1"/>
+</joint>
+
+<joint name="Rígida 14" type="fixed">
+  <origin xyz="-0.125 -0.0026 -0.0" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_250_back_1"/>
+  <child link="Aluminium_20x20_100_back_right_1"/>
+</joint>
+
+<joint name="Rígida 15" type="fixed">
+  <origin xyz="0.105 -0.0859 0.0898" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_250_front_1"/>
+  <child link="Aluminium_20x20_100_front_right_1"/>
+</joint>
+
+<joint name="Rígida 16" type="fixed">
+  <origin xyz="0.355 -0.1003 0.0898" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_250_front_1"/>
+  <child link="Aluminium_20x20_100_front_left_1"/>
+</joint>
+
+<joint name="Rígida 19" type="fixed">
+  <origin xyz="0.0 -0.0144 0.1" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_100_front_right_1"/>
+  <child link="Aluminium_20x20_250_top_front_1"/>
+</joint>
+
+<joint name="Rígida 20" type="fixed">
+  <origin xyz="0.0 -0.0144 0.1" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_100_back_right_1"/>
+  <child link="Aluminium_20x20_250_top_back_1"/>
+</joint>
+
+<joint name="Rígida 21" type="fixed">
+  <origin xyz="0.0 0.0172 0.0172" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_250_top_front_1"/>
+  <child link="Aluminium_20x20_160_right_1"/>
+</joint>
+
+<joint name="Rígida 22" type="fixed">
+  <origin xyz="0.25 0.0172 0.0172" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_250_top_front_1"/>
+  <child link="Aluminium_20x20_160_left_1"/>
+</joint>
+
+<joint name="Rígida 27" type="fixed">
+  <origin xyz="0.1049 0.12 0.0826" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_160_left_1"/>
+  <child link="encoder_holding_left_1"/>
+</joint>
+
+<joint name="Rígida 28" type="fixed">
+  <origin xyz="-0.1051 0.12 0.0826" rpy="0 0 0"/>
+  <parent link="Aluminium_20x20_160_right_1"/>
+  <child link="encoder_holding_right_1"/>
+</joint>
+
+<joint name="Rígida 29" type="fixed">
+  <origin xyz="-0.1175 -0.0475 -0.19279" rpy="0 0 0"/>
+  <parent link="encoder_holding_left_1"/>
+  <child link="E6B2_CWZ6C_left_1"/>
+</joint>
+
+<joint name="Rígida 30" type="fixed">
+  <origin xyz="0.1175 -0.055 -0.1798" rpy="0 0 0"/>
+  <parent link="encoder_holding_right_1"/>
+  <child link="E6B2_CWZ6C_right_1"/>
+</joint>
+
+<joint name="Rígida 31" type="fixed">
+  <origin xyz="-0.2128 -0.0802 0.1154" rpy="0 0 0"/>
+  <parent link="Aluminium_20x40_160_left_1"/>
+  <child link="shaft_right_1"/>
+</joint>
+
+<joint name="Rígida 32" type="fixed">
+  <origin xyz="-0.0428 -0.0802 -0.1346" rpy="0 0 0"/>
+  <parent link="Aluminium_20x40_160_right_1"/>
+  <child link="shaft_left_1"/>
+</joint>
+
+<joint name="Revolución 35" type="continuous">
+  <origin xyz="-0.0476 0.0 -0.0055" rpy="0 0 0"/>
+  <parent link="shaft_right_1"/>
+  <child link="wheel_right_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolución 36" type="continuous">
+  <origin xyz="0.0476 0.0 -0.0055" rpy="0 0 0"/>
+  <parent link="shaft_left_1"/>
+  <child link="wheel_left_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+</robot>
