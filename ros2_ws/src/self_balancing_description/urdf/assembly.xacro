@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="assembly" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find assembly_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find assembly_description)/urdf/assembly.trans" />
-<xacro:include filename="$(find assembly_description)/urdf/assembly.gazebo" />
+<xacro:include filename="$(find self_balancing_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find self_balancing_description)/urdf/assembly.trans" />
+<xacro:include filename="$(find self_balancing_description)/urdf/assembly.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="2.891151938704374e-05 -3.589068063802687e-05 0.0015000000000000011" rpy="0 0 0"/>
@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="-0.0 -0.1 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_back_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_250_back_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 -0.1 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_back_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_250_back_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Battery_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Battery_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Battery_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Battery_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="-0.1278 -0.0804 0.135" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x40_160_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x40_160_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.1278 -0.0804 0.135" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x40_160_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x40_160_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-0.1278 -0.0804 -0.115" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x40_160_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x40_160_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.1278 -0.0804 -0.115" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x40_160_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x40_160_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="-0.2 0.0198 -0.0023" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_left1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Shaft_Collar_16mm_left1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.2 0.0198 -0.0023" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_left1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Shaft_Collar_16mm_left1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="0.23 -0.0033 0.0898" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_front_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_250_front_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.23 -0.0033 0.0898" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_front_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_250_front_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="0.22 -0.0002 -0.0027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_right2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Shaft_Collar_16mm_right2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.22 -0.0002 -0.0027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_right2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Shaft_Collar_16mm_right2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="-0.22 0.0198 0.0227" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_left2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Shaft_Collar_16mm_left2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.22 0.0198 0.0227" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_left2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Shaft_Collar_16mm_left2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +202,14 @@
   <visual>
     <origin xyz="0.2 -0.0002 -0.0027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_right1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Shaft_Collar_16mm_right1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.2 -0.0002 -0.0027" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Shaft_Collar_16mm_right1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Shaft_Collar_16mm_right1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -223,14 +223,14 @@
   <visual>
     <origin xyz="-0.125 -0.083 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_back_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_100_back_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.125 -0.083 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_back_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_100_back_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -244,14 +244,14 @@
   <visual>
     <origin xyz="0.125 -0.0974 0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_back_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_100_back_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.125 -0.0974 0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_back_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_100_back_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -265,14 +265,14 @@
   <visual>
     <origin xyz="0.125 0.0826 0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_front_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_100_front_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.125 0.0826 0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_front_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_100_front_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -286,14 +286,14 @@
   <visual>
     <origin xyz="-0.125 0.097 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_front_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_100_front_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.125 0.097 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_100_front_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_100_front_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -307,14 +307,14 @@
   <visual>
     <origin xyz="0.125 0.097 -0.1" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_top_front_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_250_top_front_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.125 0.097 -0.1" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_top_front_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_250_top_front_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -328,14 +328,14 @@
   <visual>
     <origin xyz="0.125 -0.083 -0.1" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_top_back_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_250_top_back_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.125 -0.083 -0.1" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_250_top_back_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_250_top_back_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -349,14 +349,14 @@
   <visual>
     <origin xyz="0.125 0.0798 -0.1172" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_160_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_160_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.125 0.0798 -0.1172" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_160_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_160_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -370,14 +370,14 @@
   <visual>
     <origin xyz="-0.125 0.0798 -0.1172" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_160_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_160_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.125 0.0798 -0.1172" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/Aluminium_20x20_160_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/Aluminium_20x20_160_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -391,14 +391,14 @@
   <visual>
     <origin xyz="-0.2299 -0.0402 -0.1998" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/encoder_holding_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/encoder_holding_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.2299 -0.0402 -0.1998" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/encoder_holding_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/encoder_holding_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -412,14 +412,14 @@
   <visual>
     <origin xyz="0.2301 -0.0402 -0.1998" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/encoder_holding_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/encoder_holding_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.2301 -0.0402 -0.1998" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/encoder_holding_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/encoder_holding_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -433,14 +433,14 @@
   <visual>
     <origin xyz="-0.1124 0.0073 -0.00701" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/E6B2_CWZ6C_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/E6B2_CWZ6C_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.1124 0.0073 -0.00701" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/E6B2_CWZ6C_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/E6B2_CWZ6C_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -454,14 +454,14 @@
   <visual>
     <origin xyz="0.1126 0.0148 -0.02" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/E6B2_CWZ6C_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/E6B2_CWZ6C_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.1126 0.0148 -0.02" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/E6B2_CWZ6C_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/E6B2_CWZ6C_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -475,14 +475,14 @@
   <visual>
     <origin xyz="0.085 -0.0002 0.0196" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/shaft_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/shaft_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.085 -0.0002 0.0196" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/shaft_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/shaft_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -496,14 +496,14 @@
   <visual>
     <origin xyz="-0.085 -0.0002 0.0196" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/shaft_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/shaft_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.085 -0.0002 0.0196" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/shaft_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/shaft_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -517,14 +517,14 @@
   <visual>
     <origin xyz="0.1326 -0.0002 0.0251" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.1326 -0.0002 0.0251" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -538,14 +538,14 @@
   <visual>
     <origin xyz="-0.1326 -0.0002 0.0251" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.1326 -0.0002 0.0251" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assembly_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find self_balancing_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>

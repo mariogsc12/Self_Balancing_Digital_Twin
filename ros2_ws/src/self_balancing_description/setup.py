@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'assembly_description'
+package_name = 'self_balancing_description'
 
 setup(
     name=package_name,
